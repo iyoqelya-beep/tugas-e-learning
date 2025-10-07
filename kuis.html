@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis PPKn</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #eaf7ea;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2e8b57;
+    }
+    button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 15px 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #246b45;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .hidden {
+      display: none;
+    }
+    .answers {
+      background: #f1fdf1;
+      border-left: 5px solid #2e8b57;
+      padding: 15px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Materi dan Kuis PPKn</h1>
+  </header>
+
+  <div class="container" id="materi">
+    <h2>Materi Pendidikan Kewarganegaraan (PKN)</h2>
+    <p><strong>Pengertian:</strong> PKN adalah mata pelajaran yang bertujuan membentuk peserta didik menjadi warga negara yang berintegritas, beretika, bertanggung jawab, dan aktif dalam kehidupan berbangsa dan bernegara.</p>
+
+    <p><strong>Ruang Lingkup PKN:</strong></p>
+    <ul>
+      <li><b>Pengetahuan:</b> Pancasila, UUD 1945, hak dan kewajiban warga negara, norma sosial, dan hukum.</li>
+      <li><b>Keterampilan:</b> Musyawarah, berargumentasi, dan berpartisipasi dalam kegiatan demokrasi.</li>
+      <li><b>Sikap dan Nilai:</b> Tanggung jawab, toleransi, keadilan, dan cinta tanah air.</li>
+    </ul>
+
+    <p><strong>Makna Pancasila:</strong></p>
+    <ul>
+      <li>Sila 1: Ketuhanan Yang Maha Esa → Hormati kebebasan beragama.</li>
+      <li>Sila 2: Kemanusiaan yang Adil dan Beradab → Junjung martabat & tolong-menolong.</li>
+      <li>Sila 3: Persatuan Indonesia → Jaga persaudaraan & persatuan bangsa.</li>
+      <li>Sila 4: Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan → Demokrasi & musyawarah.</li>
+      <li>Sila 5: Keadilan Sosial bagi Seluruh Rakyat Indonesia → Pemerataan & kesejahteraan.</li>
+    </ul>
+
+    <button onclick="showQuiz()">Masuk ke Kuis</button>
+  </div>
+
+  <div class="container hidden" id="kuis">
+    <h2>Kuis Esai PPKn</h2>
+    <form id="quizForm">
+      <p>1. Apa yang dimaksud dengan Pendidikan Kewarganegaraan (PKN)?</p>
+      <textarea></textarea>
+
+      <p>2. Sebutkan lima sila dalam Pancasila!</p>
+      <textarea></textarea>
+
+      <p>3. Apa makna sila pertama Pancasila?</p>
+      <textarea></textarea>
+
+      <p>4. Contoh penerapan sila kedua di sekolah adalah?</p>
+      <textarea></textarea>
+
+      <p>5. Mengapa kita harus menjaga persatuan dan kesatuan?</p>
+      <textarea></textarea>
+
+      <p>6. Apa yang dimaksud dengan musyawarah?</p>
+      <textarea></textarea>
+
+      <p>7. Bagaimana cara menerapkan sila keempat dalam kehidupan sehari-hari?</p>
+      <textarea></textarea>
+
+      <p>8. Apa tujuan mempelajari PKN di sekolah?</p>
+      <textarea></textarea>
+
+      <p>9. Apa arti keadilan sosial dalam sila kelima?</p>
+      <textarea></textarea>
+
+      <p>10. Bagaimana cara menunjukkan sikap cinta tanah air?</p>
+      <textarea></textarea>
+
+      <button type="button" onclick="showAnswers()">Lihat Jawaban Benar</button>
+    </form>
+
+    <div class="answers hidden" id="answers">
+      <h3>Jawaban Benar:</h3>
+      <ol>
+        <li>PKN adalah pelajaran yang membentuk peserta didik menjadi warga negara yang cerdas, berakhlak, dan bertanggung jawab.</li>
+        <li>(1) Ketuhanan Yang Maha Esa, (2) Kemanusiaan yang Adil dan Beradab, (3) Persatuan Indonesia, (4) Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan, (5) Keadilan Sosial bagi Seluruh Rakyat Indonesia.</li>
+        <li>Mengajarkan untuk beriman dan bertakwa kepada Tuhan sesuai agama dan kepercayaan masing-masing.</li>
+        <li>Menolong teman yang kesulitan tanpa membeda-bedakan.</li>
+        <li>Agar bangsa Indonesia tetap utuh dan damai meskipun berbeda suku, agama, dan budaya.</li>
+        <li>Musyawarah adalah cara menyelesaikan masalah dengan berdiskusi untuk mencapai keputusan bersama.</li>
+        <li>Dengan menghargai pendapat orang lain dan mengambil keputusan bersama secara adil.</li>
+        <li>Untuk membentuk warga negara yang baik, demokratis, dan bertanggung jawab terhadap bangsa.</li>
+        <li>Semua warga negara mendapat hak dan kesempatan yang sama tanpa diskriminasi.</li>
+        <li>Dengan menghargai produk dalam negeri, menjaga lingkungan, dan menaati hukum.</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    function showQuiz() {
+      document.getElementById("materi").classList.add("hidden");
+      document.getElementById("kuis").classList.remove("hidden");
+    }
+
+    function showAnswers() {
+      document.getElementById("answers").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
